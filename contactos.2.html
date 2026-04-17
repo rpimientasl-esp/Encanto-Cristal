@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encanto cristal | Página Web</title>
+    <style>
+        :root {
+            --azul: #E5D8C8; /* Crema/Beige */
+            --rojo: #D3B2ED; /* Lila */
+            --gris-claro: #FFFFFF;
+            --negro: #000000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--gris-claro);
+        }
+
+        /* Encabezado */
+        header {
+            background-color: var(--azul);
+            color: #5a4a4a; 
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--rojo);
+        }
+
+        /* Navegación */
+        nav {
+            background-color: var(--gris-claro);
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--negro);
+            font-weight: bold;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--rojo);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #6a4c93;
+            border-bottom: 2px solid var(--rojo);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Formulario */
+        .Compr-form {
+            background: #fdfaf7;
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--rojo);
+            margin-top: 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Estilización de inputs y selects */
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: var(--rojo);
+            color: #4a345d; /* Color ciruela oscuro para legibilidad */
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--azul);
+        }
+
+        footer {
+            background-color: var(--azul);
+            color: #5a4a4a;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Encanto cristal</h1>
+        <p>"Brillo y belleza, en una sola pieza"</p>
+    </header>
+
+    <nav>
+        <a href="D:\Nueva carpeta\encantocristal.html">Inicio</a>
+        <a href="D:\Nueva carpeta\productos.html">Productos</a>
+        <a href="D:\Nueva carpeta\servicios.html">Servicios</a>
+        <a href="D:\Nueva carpeta\nosotras.html">Nosotras</a>
+        <a href="#Compra">Contacto</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="Compra">
+            <div class="Compr-form">
+                <h2>Realizar compra</h2>
+                <p>Déjanos tu pedido y te contactaremos de inmediato.</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" placeholder="Ej: Ana Sanchez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estilo">Estilo de manilla</label>
+                        <select id="estilo" name="estilo" required>
+                            <option value="" disabled selected>Selecciona un estilo...</option>
+                            <option value="rosado">Manilla de cristal rosado</option>
+                            <option value="blanco">Manilla cristal blanco</option>
+                            <option value="azul">Manilla cristal azul</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="medida">Medida de la mano en cm</label>
+                        <select id="medida" name="medida" required>
+                            <option value="" disabled selected>Selecciona tu medida...</option>
+                            <option value="16.5">16.5cm</option>
+                            <option value="18">18cm</option>
+                            <option value="19">19cm</option>
+                            <option value="20">20cm</option>
+                            <option value="21">21cm</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Enviar Solicitud De Compra</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Encanto cristal - Brillo y belleza, en una sola pieza</p>
+    </footer>
+
+</body>
+</html>
